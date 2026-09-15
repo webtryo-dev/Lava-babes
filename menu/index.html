@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Lava Babes Coffee</title>
+  <meta name="description" content="View the full menu at Lava Babes Coffee — bold Hawaiian brews, lattes, and more." />
+  <link rel="icon" type="image/svg+xml" href="/assets/lava_babes_logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="menu-page">
+  <!-- ═══════ NAV ═══════ -->
+  <nav class="menu-nav" id="menu-nav">
+    <a href="/" class="menu-nav__back" id="back-home-btn">
+      <span class="menu-nav__arrow">←</span> Back to Home
+    </a>
+    <img
+      src="/assets/lava_babes_logo.svg"
+      alt="Lava Babes Coffee"
+      class="menu-nav__logo"
+      width="44"
+      height="40"
+    />
+  </nav>
+
+  <!-- ═══════ MENU PDF ═══════ -->
+  <main class="menu-main" id="menu-main">
+    <h1 class="menu-main__title">Our Menu</h1>
+
+    <div class="menu-main__pdf-wrap" id="pdf-container">
+      <object
+        data="/assets/lava_babes_menu.pdf"
+        type="application/pdf"
+        class="menu-main__pdf"
+        id="pdf-object"
+        aria-label="Lava Babes Coffee Menu"
+      >
+        <!-- Fallback for browsers that can't render PDF inline -->
+        <div class="menu-main__fallback" id="pdf-fallback">
+          <p>Your browser can't display the menu PDF inline.</p>
+          <a href="/assets/lava_babes_menu.pdf" class="btn btn--primary" download>
+            <span class="btn__icon">📄</span> Download Menu (PDF)
+          </a>
+        </div>
+      </object>
+    </div>
+  </main>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer footer--compact" id="footer">
+    <div class="footer__inner">
+      <address class="footer__address">
+        <span class="footer__pin">📍</span>
+        140 Lili&#699;uokalani Ave, Honolulu, HI 96815
+      </address>
+      <p class="footer__copy">&copy; 2026 Lava Babes Coffee</p>
+    </div>
+  </footer>
+</body>
+</html>
